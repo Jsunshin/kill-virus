@@ -2,7 +2,7 @@ let config = {
     // 游戏的状态  0:游戏未开始  1：游戏进行中   2: 游戏结束
     status: 0,
     // 病毒生成的时间间隔
-    interval:1000,
+    interval:2000,
     // 病毒动画的速度
     speed:3
 }
@@ -185,7 +185,7 @@ restartBtn.onclick = function(){
     gameOverAlert.style.display = 'none'
     resetGame()
 }
-
+//实现重玩操作的函数
 function resetGame(){
     config.status = 1;
     score = 0;
